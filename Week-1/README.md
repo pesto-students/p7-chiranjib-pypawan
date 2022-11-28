@@ -61,5 +61,27 @@ JavaScript parsing is done during compile time or whenever the parser is invoked
   The last step is paint, which takes in the final render tree and renders the pixels to the screen.  
   
    The browser combines the DOM and CSSOM into a "render tree," which captures all the visible DOM content on the page and all the CSSOM style information for each node.
+    
+![render-tree](https://user-images.githubusercontent.com/64304307/204173114-62768099-762f-4348-8794-800af3f8aca2.jpeg)
   
-
+### Order of script processing  
+HTML 
+  
+JS  
+  
+CSS  
+  
+  
+## Here's a quick recap of the browser's steps:  
+Process HTML markup and build the DOM tree.  
+     
+Process CSS markup and build the CSSOM tree.  
+     
+Combine the DOM and CSSOM into a render tree.  
+     
+Run layout on the render tree to compute geometry of each node.  
+     
+Paint the individual nodes to the screen.  
+     
+     
+   
